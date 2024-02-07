@@ -1,13 +1,18 @@
 <%- include ("partials/header") -%>
-	<div class="homeHeader" style="background-image:url(<%=bucket%>/images/homeHeader.jpg);">
+	<div class="homeHeader">
+		<div class="videoWrap">
+			<video poster="<%=bucket%>/videos/home.jpg" muted autoplay loop>
+				<source src="<%=bucket%>/videos/home.mp4" type="video/mp4">
+			</video>
+		</div>
 		<div class="overlay"></div>
 		<div class="contentWidth">
 			<div class="titleWrap">
-				<h1 class="site-title">MobaCloud</h1>
-				<h2 class="site-description">A web based Operator Training Simulator accessible through a web browser which allows process operators or students to practice and enhance their skills from anywhere on any device and allows managers or teachers to track progress on any Learning Management Systems</h2>
+				<h1 class="site-title">TERA SYSTEM INTEGRATION DOO</h1>
+				<h2 class="site-description">Specijalnost nam je sigurnost vaših informacionih sistema, pružamo uslugu održavanja, vršimo nabavku opreme i rešenja za cyber bezbednost. Sa više od tri godine iskustva i portfolioom koji obuhvata više od 10 uspešnih projekata, osiguravamo pouzdanost i sigurnost za naše klijente iz javnog i privatnog sektora.</h2>
 				<div class="buttonsWrap">
-					<div class="button demo">Start Demo</div>
-					<div class="button contact">Contact</div>
+					<!--<div class="button demo">Start Demo</div>-->
+					<div class="button contact">Kontakt</div>
 				</div>
 				<div class="testimonial">
 					<div class="stars">
@@ -19,38 +24,20 @@
 					</div>
 					<div class="box">
 						<div class="border"></div>
-						<p>Cloud based solution for Operator Training that connects to any LMS.</p>
+						<p>Sve vezano za informacione tehnologije.</p>
 					</div>
 					<div class="box">
 						<div class="border"></div>
-						<p>For industries and schools, train anywhere anytime.</p>
+						<p>Za javni i privatni sektor.</p>
 					</div>
 				</div>
 				<div class="review">
 					<div class="image">
-						<img src="<%=bucket%>/images/jasper.jpeg">
+						<img src="<%=bucket%>/images/rade.png">
 					</div>
 					<div class="quoteWrap">
-						<div class="quote">"The best simulation software for process operators."</div>
-						<div class="signature">Keen Jansen <span>(Onderweijs)</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="imagesWrap">
-				<div class="wrap">
-					<div class="image high">
-						<img src="<%=bucket%>/images/home1.jpg">
-					</div>
-					<div class="image square">
-						<img src="<%=bucket%>/images/home2.jpg">
-					</div>
-				</div>
-				<div class="wrap">
-					<div class="image square">
-						<img src="<%=bucket%>/images/home4.jpg">
-					</div>
-					<div class="image high">
-						<img src="<%=bucket%>/images/home3.jpg">
+						<div class="quote">"Tera system je najbolji na svetu."</div>
+						<div class="signature">Rade Furtula <span>(Predsednik Republike Srbije)</span></div>
 					</div>
 				</div>
 			</div>
@@ -58,159 +45,40 @@
 	</div>
 	<div class="white titleText" style="margin-top:83px">
 		<div class="contentWidth">
-			<div class="title">A unique solution for highly adaptable simulations on any device.</div>
-			<div class="text">Process Operator Training simulator in the cloud that can be used both in Industry and in Schools. Give your staff the right tool to produce an amazing generation of process operators.</div>
+			<div class="title">TERA SYSTEM INTEGRATION DOO je firma sa fokusom na pružanju vrhunskih usluga u oblasti informacionih tehnologija.</div>
+			<div class="text">Sa stručnim timom koji kombinuje iskustvo i inovacije, mi smo posvećeni pružanju najboljih rešenja za održavanje sistema, bezbednost podataka i nabavku IT opreme.
+			Osnovani smo 2021. u Beogradu sa ciljem da zaštitimo što više ljudi od opasnosti koje nam donosi moderno informaciono doba u digitalnom svetu. Smatramo da smo dosadašnjim radom i zadovoljnim korisnicima na pravom putu.
+		Od ostalih nas izdvaja izvršenje u dogovorenim rokovima, dostupnost i profesionalan pristup svakom problemu.</div>
 		</div>
 		<div class="topFade"></div>
 		<div class="bottomFade"></div>
 	</div>
-	<div class="collage" style="background-image:url(<%=bucket%>/images/industry.jpeg);">
+	<div class="collage" style="background-image:url(<%=bucket%>/images/popravka.jpg);">
 		<div class="contentWidth">
 			<div class="imageWrap">
-				<img src="<%=bucket%>/images/laptop.png">
+
 			</div>
 		</div>
 	</div>
 	<div class="trioBoxes">
-		<div class="buttonWrap">
-			<div class="button">Start demo</div>
-		</div>
 		<div class="contentWidth">
 			<div class="boxes">
 				<div class="box">
-					<div class="icon"><img src="<%=bucket%>/images/cloudIcon.png"></div>
-					<div class="title">Toegankelijkheid</div>
-					<div class="text">Full cloud solution</div>
+					<div class="icon"><div class="relative"><img src="<%=bucket%>/images/popravka.png"></div></div>
+					<div class="title">Održavanje informacionih sistema</div>
+					<div class="text"></div>
 				</div>
 				<div class="box">
-					<div class="icon"><img src="<%=bucket%>/images/managerIcon.png"></div>
-					<div class="title">Efficiënt</div>
-					<div class="text">Right tool for managers and teachers</div>
+					<div class="icon"><div class="relative"><img src="<%=bucket%>/images/security.png"></div></div>
+					<div class="title">Cyber Sigurnost</div>
+					<div class="text"></div>
 				</div>
 				<div class="box">
-					<div class="icon"><img src="<%=bucket%>/images/educationIcon.png"></div>
-					<div class="title">Verbeterd onderwijs</div>
-					<div class="text">Right tool for managers and teachers</div>
+					<div class="icon"><div class="relative"><img src="<%=bucket%>/images/nabavka.png"></div></div>
+					<div class="title">Nabavka IT opreme</div>
+					<div class="text"></div>
 				</div>
 			</div>	
-		</div>
-	</div>
-	<div class="lightblue description">
-		<div class="contentWidth">
-			<div class="textWrap">
-				<div class="testimonial">
-					<div class="stars">
-						<img src="<%=bucket%>/images/star.png">
-						<img src="<%=bucket%>/images/star.png">
-						<img src="<%=bucket%>/images/star.png">
-						<img src="<%=bucket%>/images/star.png">
-						<img src="<%=bucket%>/images/star.png">
-					</div>
-					<div class="box">
-						<div class="border"></div>
-						<p>Cloud based solution for Operator Training that connects to any LMS.</p>
-					</div>
-					<div class="box">
-						<div class="border"></div>
-						<p>For industries and schools, train anywhere anytime.</p>
-					</div>
-				</div>
-				<div class="textBox">
-					<div class="title">Learning</div>
-					<div class="text">Give students the right tool to get real life experience on process control either in the classrom or at home.</div>
-				</div>
-				<div class="textBox">
-					<div class="title">Training</div>
-					<div class="text">Give your process operators the right tool to keep their operating skills sharp without the need for an OTS room.</div>
-				</div>
-				<div class="textBox">
-					<div class="title">Tracking progress</div>
-					<div class="text">Track learning progress on any learning management system.</div>
-				</div>
-			</div>
-			<div class="imagesWrap">
-				<div class="mainImage">
-					<img src="<%=bucket%>/images/description1.jpg">
-				</div>
-				<div class="subImages">
-					<div class="subImage">
-						<img src="<%=bucket%>/images/description2.jpg">
-					</div>
-					<div class="subImage">
-						<img src="<%=bucket%>/images/description3.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="white licensing">
-		<div class="contentWidth">
-			<div class="sectionTitle">Licensing</div>
-			<div class="boxes">
-				<div class="box">
-					<div class="title">Student</div>
-					<div class="boxDescription">An individual student annual license</div>
-					<div class="price">120&euro;<span>/year</span></div>
-					<div class="buttonWrap">
-						<div class="button">Get started</div>
-					</div>
-					<div class="attributes">
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">1 floating license</div>
-						</div>
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">5 modules with eLeanings</div>
-						</div>
-					</div>
-				</div>
-				<div class="box popular">
-					<div class="title">Classroom</div>
-					<div class="boxDescription">25 students annual license</div>
-					<div class="price">500&euro;<span>/year</span></div>
-					<div class="buttonWrap">
-						<div class="button">Get started</div>
-					</div>
-					<div class="attributes">
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">25 floating licenses</div>
-						</div>
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">5 modules with eLeanings</div>
-						</div>
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">Connection to Learning management systems</div>
-						</div>
-					</div>
-					<div class="mostPopular">MOST POPULAR</div>
-				</div>
-				<div class="box">
-					<div class="title">Industrial</div>
-					<div class="boxDescription">License is used for commercial purposes.</div>
-					<div class="price">Contact us</div>
-					<div class="buttonWrap">
-						<div class="button">Get started</div>
-					</div>
-					<div class="attributes">
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">Any number of licenses</div>
-						</div>
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">Tailored modules and DCS look</div>
-						</div>
-						<div class="attribute">
-							<div class="icon"><img src="<%=bucket%>/images/checkmarkIcon.png"></div>
-							<div class="name">Connection to Learning management systems</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div class="industryTestimonials" style="background-image:url(<%=bucket%>/images/industry.jpeg);">
@@ -220,10 +88,10 @@
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				</div>
 				<div class="person">
-					<div class="image"><img src="<%=bucket%>/images/jasper.jpeg"></div>
+					<div class="image"><img src="<%=bucket%>/images/rade.png"></div>
 					<div class="signature">
-						<div class="name">Jasper Ruten <span>(plant manager)</span></div>
-						<div class="company">Huntsman</div>
+						<div class="name">Rade Furtula <span>(Predsednik Republike Srbije)</span></div>
+						<div class="company">Vlada</div>
 					</div>
 				</div>
 			</div>
@@ -232,10 +100,10 @@
 					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 				</div>
 				<div class="person">
-					<div class="image"><img src="<%=bucket%>/images/jasper.jpeg"></div>
+					<div class="image"><img src="<%=bucket%>/images/rade.png"></div>
 					<div class="signature">
-						<div class="name">Jasper Ruten <span>(plant manager)</span></div>
-						<div class="company">Huntsman</div>
+						<div class="name">Rade Furtula <span>(Predsednik Republike Srbije)</span></div>
+						<div class="company">Vlada</div>
 					</div>
 				</div>
 			</div>

@@ -240,8 +240,8 @@ input[type=number] {
     -o-transition:all ease 0.5s;
     transition:all ease 0.5s;
     color:rgb(255,255,255);
-    background: rgb(37,78,118);
-    background: radial-gradient(circle, rgba(37,78,118,1) 0%, rgba(20,42,64,1) 100%);
+    background: rgb(4,159,205);
+    background: radial-gradient(circle, rgba(2,75,97,1) 0%, rgba(4,159,205,1) 100%);
     -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
     box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
     padding:10px;
@@ -256,7 +256,7 @@ input[type=number] {
 .primaryMenu .menu{
     text-align:center;
     width:100%;
-    font-size:0;;
+    font-size:0;
 }
 
 .primaryMenu .menu .menuItem{
@@ -270,8 +270,8 @@ input[type=number] {
     -ms-transition:all ease 0.5s;
     -o-transition:all ease 0.5s;
     transition:all ease 0.5s;
-    color:rgb(20,42,64);
-    border-top:4px solid rgba(20,42,64,0);
+    color:rgb(0,0,0);
+    border-top:4px solid rgba(4,159,205,0);
 }
 
 .primaryMenu .menu .contactPhoneButton{
@@ -282,8 +282,8 @@ input[type=number] {
     -ms-transition:all ease 0.5s;
     -o-transition:all ease 0.5s;
     transition:all ease 0.5s;
-    color:rgb(37,78,118);
-    background-color:rgb(20,255,20);
+    color:rgb(4,159,205);
+    background-color:rgb(255,255,255);
     border:1px solid rgb(0,0,0);
     font-size:20px;
     width:50%;
@@ -294,7 +294,7 @@ input[type=number] {
 }
 
 .primaryMenu .menu .menuItem:hover{
-    border-top:4px solid rgba(20,42,64,1);
+    border-top:4px solid rgba(4,159,205,1);
 }
 
 .responsiveHandle{
@@ -314,7 +314,7 @@ input[type=number] {
 .responsiveHandle .wrap .bar{
     height:4px;
     position:absolute;
-    background-color:rgb(20,42,64);
+    background-color:rgb(0,0,0);
     border-radius:3px;
     width:100%;
     -webkit-transition: all ease 0.5s;
@@ -407,6 +407,21 @@ input[type=number] {
     transition:all ease 0.5s;
 }
 
+.homeHeader .videoWrap{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:900;
+}
+
+.homeHeader .videoWrap video{
+    min-width: 100vw;
+    min-height: 100vh;
+    max-height:100vh;
+}
+
 .homeHeader .overlay{
     position:absolute;
     top:0;
@@ -414,20 +429,25 @@ input[type=number] {
     right:0;
     bottom:0;
     z-index:1000;
-    background-color: rgba(255,255,255,0.92);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .homeHeader .titleWrap{
     position:absolute;
-    top:5%;
-    left:0%;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
     z-index:1100;
-    width:40%;
+    width:100%;
 }
 
 .homeHeader h1{
     background-color:rgba(0,0,0,0);
-    color:rgb(37,78,118);
+    color:rgb(255,255,255);
     font-size:50px;
     margin-bottom:10px;
     margin-top:0px;
@@ -435,7 +455,7 @@ input[type=number] {
 
 .homeHeader h2{
     background-color:rgba(0,0,0,0);
-    color:rgb(20,42,64);
+    color:rgb(255,255,255);
     font-size:18px;
     line-height: 26px;
     font-weight:300;
@@ -456,10 +476,10 @@ input[type=number] {
     -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0);
     box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0);
     padding:20px;
-    background:rgb(37,78,118);
+    background:rgb(4,159,205);
     margin-right:20px;
     cursor:pointer;
-    border:1px solid rgb(37,78,118);
+    border:1px solid rgb(4,159,205);
 }
 
 .homeHeader .buttonsWrap .demo{
@@ -472,44 +492,11 @@ input[type=number] {
     box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.5);
 }
 
-.homeHeader .imagesWrap{
-    font-size:0;
-    position:absolute;
-    z-index:1100;
-    top:50%;
-    right:0;
-    -webkit-transform:translateY(-50%);
-    -moz-transform:translateY(-50%);
-    -ms-transform:translateY(-50%);
-    -o-transform:translateY(-50%);
-    transform:translateY(-50%);
-    width:50%;
-}
-
-.homeHeader .imagesWrap .wrap{
-    width:48%;
-    display:inline-block;
-    vertical-align: top;
-}
-
-.homeHeader .imagesWrap .wrap .image{
-    overflow:hidden;
-}
-
-.homeHeader .imagesWrap .wrap .square{
-    border:4px solid rgb(37,78,118);
-    border-radius:100%;
-}
-
-.homeHeader .imagesWrap .wrap .high{
-    border-radius:100px;
-    border:4px solid rgb(255,255,255);
-}
-
 .testimonial{
     font-size:0;
     text-align:left;
     margin-top:25px;
+    width:50%;
 }
 
 .testimonial .box{
@@ -519,12 +506,13 @@ input[type=number] {
     vertical-align: middle;
     padding:10px 20px;
     position:relative;
+    color:rgb(255,255,255);
 }
 
 .testimonial .box .border{
     height:25px;
     width:1px;
-    background-color:rgb(150,150,150);
+    background-color:rgb(255,255,255);
     position:absolute;
     left:0;
     top:50%;
@@ -561,7 +549,7 @@ input[type=number] {
 .homeHeader .review .image{
     display:inline-block;
     vertical-align: middle;
-    border:2px solid rgb(37,78,118);
+    border:2px solid rgb(4,159,205);
     overflow:hidden;
     border-radius:100%;
     width:50px;
@@ -578,17 +566,17 @@ input[type=number] {
 .homeHeader .review .quoteWrap .quote{
     font-weight:bold;
     font-style:italic;
-    color:rgb(20,42,64);
+    color:rgb(255,255,255);
 }
 
 .homeHeader .review .quoteWrap .signature{
     font-weight:500;
-    color:rgb(37,78,118);
+    color:rgb(4,159,205);
 }
 
 .homeHeader .review .quoteWrap .signature span{
     font-weight:200;
-    color:rgb(37,78,118);
+    color:rgb(4,159,205);
 }
 
 .white{
@@ -623,21 +611,22 @@ input[type=number] {
     font-weight:700;
     font-size:28px;
     margin-bottom:20px;
-    color:rgb(37,78,118);
+    color:rgb(4,159,205);
 }
 
 .titleText .text{
     font-weight:300;
     font-size:16px;
     margin-bottom:20px;
-    max-width:500px;
+    max-width:700px;
     margin:0 auto;
-    color:rgb(20,42,64);
+    color:rgb(0,0,0);
 }
 
 .collage{
     background-size:cover;
     background-position:center center;
+    min-height:500px;
 }
 
 .collage .imageWrap{
@@ -650,36 +639,7 @@ input[type=number] {
 
 .trioBoxes{
     padding:40px 0;
-}
-
-.trioBoxes .buttonWrap{
-    margin-bottom:80px;
-}
-
-.trioBoxes .buttonWrap .button{
-    border-radius:12px;
-    font-weight:600;
-    -webkit-transition:all ease 0.5s;
-    -moz-transition:all ease 0.5s;
-    -ms-transition:all ease 0.5s;
-    -o-transition:all ease 0.5s;
-    transition:all ease 0.5s;
-    color:rgb(255,255,255);
-    background: rgb(37,78,118);
-    width:300px;
-    text-align:center;
-    margin:0 auto;
-    font-size:28px;
-    background: radial-gradient(circle, rgba(37,78,118,1) 0%, rgba(20,42,64,1) 100%);
-    -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
-    box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
-    padding:20px;
-    cursor:pointer;
-}
-
-.trioBoxes .buttonWrap .button:hover{
-    -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.5);
-    box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.5);
+    padding-top:90px;
 }
 
 .trioBoxes .boxes{
@@ -695,7 +655,7 @@ input[type=number] {
     -webkit-box-flex: 1;
     flex-grow: 1;
     background-color:rgb(234,239,244);
-    color:rgb(20,42,64);
+    color:rgb(2,75,97);
     border-radius:20px;
     position:relative;
     padding:0 20px;
@@ -727,203 +687,36 @@ input[type=number] {
     width:100px;
     height:100px;
     border-radius:100%;
-    background-color:rgb(20,42,64);
+    background-color:rgb(4,159,205);
     overflow:hidden;
 }
 
-.lightblue{
-   background-color:rgb(234,239,244); 
+.trioBoxes .boxes .box .icon .relative{
+    width:100px;
+    height:100px;
+    position:relative;
 }
 
-.description{
-    font-size:0;
-    text-align:left;
-    padding:60px 0;
-}
-
-.description .testimonial{
-    margin-bottom:30px;
-}
-
-.description .textWrap{
-    display:inline-block;
-    vertical-align: middle;
-    width:65%;
-    font-size:16px;
-    padding-right:10%;
-    color:rgb(20,42,64);
-}
-
-.description .imagesWrap{
-    display:inline-block;
-    vertical-align: middle;
-    width:35%;
-}
-
-.description .textWrap .textBox{
-    margin-bottom:40px;
-}
-
-.description .textWrap .textBox .title{
-    font-weight:700;
-    font-size:20px;
-}
-
-.description .textWrap .textBox .text{
-    font-weight:300;
-    font-size:14px;
-}
-
-.description .imagesWrap img{
+.trioBoxes .boxes .box .icon img{
     display:block;
-}
-
-.description .imagesWrap .mainImage{
-    border:4px solid rgb(255,255,255);
-    border-radius:10px;
-    overflow:hidden;
-    margin-bottom:10px;
-}
-
-.description .imagesWrap .subImages{
-    font-size:0;
-    text-align: center;
-}
-
-.description .imagesWrap .subImages .subImage{
-    width:50%;
-    display:inline-block;
-    vertical-align: top;
-    border:4px solid rgb(255,255,255);
-    border-radius:10px;
-    overflow:hidden;
-}
-
-.licensing{
-    padding:40px 0px;
-}
-
-.licensing .sectionTitle{
-    font-weight:700;
-    font-size:32px;
-    color:rgb(20,42,64);
-    margin-bottom:20px;
-    text-align: center;
-}
-
-.licensing .boxes{
-    display:flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-}
-
-.licensing .boxes .box{
-    width:calc(33% - 40px);
-    margin:20px;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    background-color:rgb(234,239,244);
-    padding:15px 20px;
-    border-radius: 10px;
-    color:rgb(20,42,64);
-}
-
-.licensing .boxes .box .title{
-    font-weight:bold;
-    color:rgb(37,78,118);
-    font-size:22px;
-    margin-bottom:8px;
-}
-
-.licensing .boxes .box .boxDescription{
-    font-size:12px;
-    margin-bottom:40px;
-}
-
-.licensing .boxes .box .price{
-    font-size:32px;
-    font-weight:700;
-    margin-bottom:30px;
-}
-
-.licensing .boxes .box .price span{
-    font-size:16px;
-    font-weight:300;
-}
-
-.licensing .boxes .box .buttonWrap{
-    margin-bottom:25px;
-}
-
-.licensing .boxes .box .buttonWrap .button{
-    border-radius:12px;
-    font-weight:600;
-    -webkit-transition:all ease 0.5s;
-    -moz-transition:all ease 0.5s;
-    -ms-transition:all ease 0.5s;
-    -o-transition:all ease 0.5s;
-    transition:all ease 0.5s;
-    color:rgb(255,255,255);
-    background: rgb(37,78,118);
-    text-align:center;
-    margin:0 auto;
-    font-size:20px;
-    background: radial-gradient(circle, rgba(37,78,118,1) 0%, rgba(20,42,64,1) 100%);
-    -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
-    box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.0);
-    padding:10px;
-    cursor:pointer;
-    display:inline-block;
-}
-
-.licensing .boxes .box .buttonWrap .button:hover{
-    -webkit-box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.5);
-    box-shadow: 0 0.1875rem 0.375rem rgb(0, 0, 0, 0.5);
-}
-
-.licensing .boxes .box .attributes{
-    font-size:0;
-}
-
-.licensing .boxes .box .attributes .attribute{
-    font-size:0;
-    margin-bottom:10px;
-}
-
-.licensing .boxes .box .attributes .attribute .icon{
-    width:25px;
-    display:inline-block;
-    vertical-align: top;
-}
-
-.licensing .boxes .box .attributes .attribute .name{
-    width:calc(100% - 25px);
-    padding-left:10px;
-    font-size:14px;
-    vertical-align: top;
-    display:inline-block;
-}
-
-.licensing .boxes .popular{
-    border:2px solid rgb(37,78,118);
-}
-
-.licensing .boxes .box .mostPopular{
     width:60%;
-    background-color:rgb(255,255,255);
-    border:1px solid rgb(20,42,64);
-    padding:5px 2px;
-    text-align:center;
     margin:0 auto;
-    font-size:14px;
-    margin-top:20px;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position:absolute;
 }
+
 
 .industryTestimonials{
     background-size:cover;
     background-position:center center;
     padding:60px 0;
+    background-color:rgb(4,159,205);
 }
 
 .industryTestimonials .contentWidth{
@@ -940,9 +733,9 @@ input[type=number] {
     flex-grow: 1;
     background-color:rgb(255,255,255);
     border-radius:10px;
-    border:1px solid rgb(20,42,64);
+    border:1px solid rgb(0,0,0);
     padding:20px;
-    color:rgb(20,42,64);
+    color:rgb(0,0,0);
 }
 
 .industryTestimonials .contentWidth .testimonialWrap .content{
@@ -962,7 +755,7 @@ input[type=number] {
     width: 50px;
     height:50px;
     overflow: hidden;
-    border:2px solid rgb(37,78,118);
+    border:2px solid rgb(4,159,205);
     border-radius: 100%;
 }
 
@@ -980,7 +773,7 @@ input[type=number] {
 
 .industryTestimonials .contentWidth .testimonialWrap .person .signature .name{
     font-weight:700;
-    color:rgb(37,78,118);
+    color:rgb(4,159,205);
 }
 
 .industryTestimonials .contentWidth .testimonialWrap .person .signature .name span{
@@ -989,6 +782,7 @@ input[type=number] {
 
 .industryTestimonials .contentWidth .testimonialWrap .person .signature .company{
     font-weight:500;
+    color:rgb(4,159,205);
 }
 
 footer{
@@ -997,9 +791,9 @@ footer{
 }
 
 footer .footerContent{
-    border-top:1px solid rgb(37,78,118);
+    border-top:1px solid rgb(4,159,205);
     padding-top:10px;
-    color:rgb(37,78,118);
+    color:rgb(4,159,205);
     display:flex;
     flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -1043,18 +837,12 @@ footer .footerContent .footerLogo .inline{
         right:20px;
     }
 
-    .homeHeader .titleWrap {
-        left:20px;
+    .homeHeader .titleWrap{
+        padding:0px 10px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .homeHeader .titleWrap {
-        width:calc(65% - 20px);
-    }
-    .homeHeader .imagesWrap{
-        width:calc(35% - 20px);
-    }
 
     .trioBoxes .boxes .box{
         width:400px;
@@ -1067,6 +855,10 @@ footer .footerContent .footerLogo .inline{
 }
 
 @media screen and (max-width: 800px) {
+
+    .homeHeader{
+        top:50px;
+    }
     .primaryMenu .logo{
         position:relative;
         top:auto;
@@ -1093,7 +885,7 @@ footer .footerContent .footerLogo .inline{
         -o-transition:all ease 0.5s;
         transition:all ease 0.5s;
         background: rgb(37,78,118);
-        background: linear-gradient(90deg, rgb(20,42,64), rgb(37,78,118));
+        background: linear-gradient(90deg, rgb(2,75,97), rgb(4,159,205));
     }
 
     .primaryMenu .menu .contactPhoneButton{
@@ -1120,32 +912,14 @@ footer .footerContent .footerLogo .inline{
     }
 
     .primaryMenu .menuActive{
-        top:73px;
-        height:calc(100vh - 73px);
+        top:50px;
+        height:calc(100vh - 50px);
         overflow:visible;
         opacity:1;
     }
 
     .contactPhoneButton{
         display:block;
-    }
-
-
-    .description .textWrap{
-        display:block;
-        width:80%;
-        margin:0 auto;
-    }
-
-    .description .imagesWrap{
-        display:block;
-        width:80%;
-        max-width:500px;
-        margin:0 auto;
-    }
-
-    .licensing .boxes .box{
-        width:80%;
     }
 }
 
@@ -1156,12 +930,13 @@ footer .footerContent .footerLogo .inline{
 }
 
 @media screen and (max-width: 600px) {
-    .homeHeader .imagesWrap{
-        display:none;
+    
+    .testimonial{
+        width:70%;
     }
 
-    .homeHeader .titleWrap{
-        width:calc(100% - 40px);
+    .homeHeader h1{
+        font-size:40px;
     }
 
     .homeHeader .titleWrap h2{
@@ -1174,16 +949,13 @@ footer .footerContent .footerLogo .inline{
         font-size:16px;
     }
 
-    .description .textWrap{
-        width:100%;
-    }
-
     footer .footerContent .footerLogo .inline{
         font-size:10px;
     }
     footer .footerContent .copyright{
         font-size:10px;
     }
+
 }
 
 
