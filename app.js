@@ -35,7 +35,7 @@ var transporter = nodemailer.createTransport({
 var bucket = process.env.bucket ? process.env.bucket : "";
 
 http.listen(process.env.PORT, function(){
-	console.log("MobaCloud Website");
+	console.log("TeraSystem Website");
 	console.log("Server Started");
 });
 
