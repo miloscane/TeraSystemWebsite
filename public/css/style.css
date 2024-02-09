@@ -851,6 +851,10 @@ input[type=number] {
     color:rgb(4,159,205);
 }
 
+.animatedSection{
+    overflow-x:hidden;
+}
+
 .animatedElem{
     -webkit-transition:all ease 2s;
     -moz-transition:all ease 2s;
@@ -866,7 +870,6 @@ input[type=number] {
     -o-transform: translate(0,0);
     transform: translate(0,0);
     opacity:1;
-    overflow-x:hidden;
 }
 
 body .animated .toTopOpacity{
