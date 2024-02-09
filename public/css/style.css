@@ -866,6 +866,7 @@ input[type=number] {
     -o-transform: translate(0,0);
     transform: translate(0,0);
     opacity:1;
+    overflow-x:hidden;
 }
 
 body .animated .toTopOpacity{
